@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 325px;
+}
+
+.headerLine{
+    background: #343434;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+
+.form{
+    padding: 15px;
+}
+#popup_submit{
+    display: none;
+}
+
+.form #popup_submit, .form #popup_add_to_report{
+    margin-top: 10px;
+}
+
+.forCheckboxes{
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.forCheckboxes div:first-child{
+    margin-right: 25px;
+}
+
+.footerLine{
+    background: #ddd;
+    color: orange;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Popup</title>
+        <link rel="stylesheet" href="src/css/materialize.min.css">
+        <link rel="stylesheet" href="src/css/popup.css">
+    </head>
+    <body>
+
+        <div class="headerLine">DMCA INFRINGEMENT REPORT</div>
+
+        <div class="form" id="popup_form">
+
+            <div class="input-field">
+                <input type="text" id="original_work" placeholder="" required>
+                <label for="original_work">Your Original Work:</label>
+            </div>
+
+            <div class="input-field">
+                <input type="text" id="infringing_work" placeholder="" required>
+                <label for="infringing_work">Infringing Work:</label>
+            </div>
+
+            <div>
+                <label for="yes">Do you wish to continue adding URLs to this report?</label>
+            </div>
+
+            <div class="forCheckboxes">
+                <div>
+                    <input type="checkbox" value="yes" id="yes" checked/>
+                    <label for="yes">YES</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="no" id="no"/>
+                    <label for="no">NO</label>
+                </div>
+            </div>
+
+            <div>Do NOT hit complete till you are finished reporting all copycats for the site you are viewing / investigating.</div>
+
+            <button type="button" class="waves-effect waves-light btn" id="popup_add_to_report">Add to Report</button>
+            <button type="button" class="waves-effect waves-light btn" id="popup_submit">Submit</button>
+        </div>
+
+        <div class="footerLine"></div>
+
+        <script type="text/javascript" src="src/js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="src/js/materialize.min.js"></script>
+        <script type="text/javascript" src="src/js/popup.js"></script>
+    </body>
+</html>

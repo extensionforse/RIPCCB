@@ -1,0 +1,11 @@
+/background
+chrome.extension.onMessage.addListener(function(message,sender,sendResponse){
+  if(message.text == "getStuff")
+    sendResponse({stuff:"test"}); //This would be where you send your stuff
+});
+
+//contents
+chrome.extension.sendMessage({text:"getStuff"},function(reponse){
+  if(reponse.stuff == "test")
+    alert("Test received");
+});

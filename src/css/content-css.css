@@ -1,0 +1,21 @@
+.yellow{
+  background-color: yellow;
+}
+.ch-box{
+  display: flex;
+  flex-direction: column;
+  min-height: 30px;
+}
+.submit{
+  margin-top: 1em;
+}
+input[type=submit] {
+    padding:5px 15px;
+    background:#ff4c4c;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    min-width: 120px;
+    font-size: 18px;
+}

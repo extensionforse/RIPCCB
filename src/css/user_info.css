@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* User Info */
+#user_info{
+    display: flex;
+    flex-flow: column;
+}
+
+#user_info input{
+    height: 30px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-size: 30px;
+    margin-bottom: 0;
+    display: none;
+}
+
+#user_info #save_personal_info{
+    width: 300px;
+    height: 35px;
+    color: #fff;
+    background: lightseagreen;
+    border: none;
+    cursor: pointer;
+}
+
+#remove_reports{
+    display: none;
+    width: 300px;
+    height: 35px;
+    color: #fff;
+    background: crimson;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+
+/* Reports */
+.table .rw{
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+.table .rw:hover{
+    opacity: 0.8;
+}
+
+.table .rw .cl:last-child{
+    cursor: pointer;
+    margin-left: 15px;
+    font-weight: bold;
+
+}

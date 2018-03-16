@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "Rest In Peace Copycat Blaster",
+
+  "version": "1.0.1",
+
+  "description": "Copycat Reporting DMCA Takedown Made Easy",
+
+  "icons": {
+    "96": "icons/icon128.png"
+  },
+  "background":{
+    "scripts": ["src/js/jquery-2.1.1.min.js", "background.js"],
+    "persistent": true
+
+  },
+  "permissions": [
+    "<all_urls>", "tabs", "storage", "unlimitedStorage", "notifications"
+
+  ],
+  "options_page": "user_info.html",
+  "web_accessible_resources": ["src/*"],
+  "browser_action":{
+
+  },
+
+"content_scripts": [
+   {
+     "matches": ["<all_urls>"],
+     "css": ["src/css/content-css.css"],
+     "js": ["src/js/jquery-2.1.1.min.js", "content.js"]
+   }
+ ]
+}
